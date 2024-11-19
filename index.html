@@ -10,10 +10,74 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/font-styles.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body class="lato-bold">
+    <header>
+      <nav
+        id="navigation-bar"
+        class="navbar px-3 navbar-expand-lg bg-body-tertiary"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="/public/images/dnest-ten-years.png"
+              alt="Digital NEST celebrates 10 years logo."
+              width="150"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ms-auto my-2 me-4 mb-md-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase"
+                  href="https://digitalnest.org/ten-year-letter"
+                >
+                  dn10
+                </a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a class="nav-link" href="https://digitalnest.org/who-we-are/">
+                  Who we are
+                </a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a class="nav-link" href="https://digitalnest.org/our-impact/">
+                  Our impact
+                </a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a class="nav-link" href="https://digitalnest.org/programs/">
+                  Programs
+                </a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a
+                  class="nav-link"
+                  href="https://digitalnest.org/hire-the-nest/"
+                >
+                  Hire the NEST
+                </a>
+              </li>
+            </ul>
+            <a class="nav-item" href="https://digitalnest.org/?campaign=623505">
+              <button id="donate-btn" class="btn text-uppercase" type="button">
+                Donate now!
+              </button>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

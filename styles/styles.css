@@ -1,0 +1,8 @@
+.D {
+  border: 1px solid #f00;
+}
+
+header #donate-btn {
+  background-color: rgb(204, 110, 57);
+  color: white;
+}
