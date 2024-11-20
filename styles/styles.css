@@ -19,3 +19,7 @@ header .nav-item :hover {
 #donate-btn:hover {
   background-color: var(--dnest-purple-secondary);
 }
+
+#salinas-overview {
+  height: 25rem;
+}
