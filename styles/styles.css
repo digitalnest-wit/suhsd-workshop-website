@@ -1,6 +1,7 @@
 :root {
   --dnest-orange: rgb(204, 110, 57);
   --dnest-purple-secondary: rgb(155, 55, 91);
+  --dnest-opaque-magenta: rgba(205, 29, 133, 0.5);
 }
 
 header .nav-item :hover {
@@ -21,5 +22,6 @@ header .nav-item :hover {
 }
 
 #salinas-overview {
-  height: 25rem;
+  background: linear-gradient(var(--dnest-opaque-magenta), transparent),
+    center no-repeat url("/public/images/salinas-mountains.jpg");
 }
