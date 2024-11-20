@@ -1,15 +1,15 @@
 :root {
   --dnest-orange: rgb(204, 110, 57);
-  --dnest-purple-secondary: rgb(155, 55, 91);
+  --dnest-magenta: rgb(155, 55, 91);
   --dnest-opaque-magenta: rgba(205, 29, 133, 0.5);
 }
 
 header .nav-item :hover {
-  color: var(--dnest-purple-secondary);
+  color: var(--dnest-magenta);
 }
 
 .D {
-  border: 1px solid #f00;
+  border: 1px solid red;
 }
 
 #donate-btn {
@@ -18,7 +18,7 @@ header .nav-item :hover {
 }
 
 #donate-btn:hover {
-  background-color: var(--dnest-purple-secondary);
+  background-color: var(--dnest-magenta);
 }
 
 #salinas-overview {
