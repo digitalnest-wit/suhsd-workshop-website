@@ -1,8 +1,21 @@
+:root {
+  --dnest-orange: rgb(204, 110, 57);
+  --dnest-purple-secondary: rgb(155, 55, 91);
+}
+
+header .nav-item :hover {
+  color: var(--dnest-purple-secondary);
+}
+
 .D {
   border: 1px solid #f00;
 }
 
-header #donate-btn {
-  background-color: rgb(204, 110, 57);
+#donate-btn {
+  background-color: var(--dnest-orange);
   color: white;
+}
+
+#donate-btn:hover {
+  background-color: var(--dnest-purple-secondary);
 }
