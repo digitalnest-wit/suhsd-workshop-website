@@ -8,6 +8,20 @@ header .nav-item :hover {
   color: var(--dnest-magenta);
 }
 
+footer {
+  background: var(--dnest-magenta);
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid transparent;
+}
+
+footer a:hover {
+  border-bottom: 2px solid white;
+}
+
 .D {
   border: 1px solid red;
 }
@@ -24,4 +38,10 @@ header .nav-item :hover {
 #salinas-overview {
   background: linear-gradient(var(--dnest-opaque-magenta), transparent),
     center no-repeat url("/public/images/salinas-mountains.jpg");
+}
+
+#dnest-logo-white {
+  width: 3rem;
+  padding: 0.5rem 0rem;
+  filter: invert();
 }
