@@ -35,11 +35,6 @@ footer a:hover {
   background-color: var(--dnest-magenta);
 }
 
-#salinas-overview {
-  background: linear-gradient(var(--dnest-opaque-magenta), transparent),
-    center no-repeat url("/public/images/salinas-mountains.jpg");
-}
-
 #dnest-logo-white {
   width: 3rem;
   padding: 0.5rem 0rem;
