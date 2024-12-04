@@ -1,17 +1,31 @@
-const overviewSection = document.getElementById("salinas-overview");
-// TODO: Set the URI to the cover image
-const overviewImageURI = "/public/images/salinas-mountains.jpg";
+loadHeroSection();
 
-overviewSection.style.background = `  
-linear-gradient(var(--dnest-opaque-magenta), transparent),
-  center no-repeat url(${overviewImageURI})
-`;
+const testimonialSectionArgs = {
+  paragraphText: "One of my favorite memories in Salinas is when...",
+  videoURI: "/public/videos/sample-video.mp4",
+}
 
-const interviewVideo = document.getElementById("interview-video");
-// TODO: Set the URI to the video
-const videoURI = "/public/videos/sample-video.mp4";
+loadTestimonialSection(testimonialSectionArgs);
 
-const source = document.createElement("source");
-source.src = videoURI;
+function loadHeroSection() {
+  const overviewSection = document.getElementById("salinas-overview");
+  const overviewImageURI = "/public/images/salinas-mountains.jpg";
+  
+  overviewSection.style.background = `
+  linear-gradient(var(--dnest-opaque-magenta), transparent),
+    center no-repeat url(${overviewImageURI})
+  `;
+}
 
-interviewVideo.appendChild(source);
+function loadTestimonialSection(args) {
+  const { paragraphText, videoURI } = args;
+
+  const interviewVideo = document.getElementById("interview-video");
+  const source = document.createElement("source");
+
+  source.src = videoURI;
+  interviewVideo.appendChild(source);
+
+  const testimonialParagraph = document.getElementById("testimonial");
+  testimonialParagraph.textContent = paragraphText;
+}
