@@ -3,7 +3,7 @@ loadHeroSection();
 const testimonialSectionArgs = {
   paragraphText: "One of my favorite memories in Salinas is when...",
   videoURI: "/public/videos/sample-video.mp4",
-}
+};
 
 loadTestimonialSection(testimonialSectionArgs);
 
